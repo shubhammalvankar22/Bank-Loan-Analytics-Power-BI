@@ -1,5 +1,9 @@
 # Bank Loan Analytics Dashboard -- Power BI
 
+## 📊 Live Dashboard
+
+[🔗 View the Interactive Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNWZiZjAwMjUtOWZkNC00Nzg1LWJjNjItNjFlNzJkNTQ0ODg4IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)
+
 ## 📊 Project Overview
 
 This project is an **end-to-end Bank Loan Analytics Dashboard** built
