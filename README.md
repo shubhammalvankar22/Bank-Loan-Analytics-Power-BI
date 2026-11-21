@@ -1,188 +1,187 @@
-# Bank Loan Analytics Dashboard -- Power BI
+# 📊 Bank Loan Analytics Dashboard | Power BI
 
-## 📊 Project Overview
+🔗 **[View Interactive Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNWZiZjAwMjUtOWZkNC00Nzg1LWJjNjItNjFlNzJkNTQ0ODg4IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)**
 
-This project is an **end-to-end Bank Loan Analytics Dashboard** built
-using **Microsoft Power BI**.
+## 📌 Project Overview
 
-The dashboard analyzes loan applications, funded amounts, repayments,
-interest rates, debt-to-income (DTI), loan status, borrower
-characteristics, and loan purposes. It is designed to help stakeholders
-understand overall loan performance and identify trends in lending and
-repayment.
+The **Bank Loan Analytics Dashboard** is an end-to-end Business Intelligence project built using **Microsoft Power BI** to analyze loan applications, funding, repayments, interest rates, borrower characteristics, loan status, loan purposes, and Debt-to-Income (DTI) metrics.
+
+The dashboard helps stakeholders monitor lending performance, understand portfolio trends, and identify patterns across good and bad loans.
+
+---
 
 ## 🎯 Business Objectives
 
-The main objectives of this project are to:
+- Monitor overall loan application and funding performance.
+- Analyze **Funded Amount** and **Amount Received**.
+- Track **Interest Rate** and **Debt-to-Income (DTI) Ratio**.
+- Compare **Good Loans vs Bad Loans**.
+- Analyze loan performance by **Loan Purpose** and **Loan Status**.
+- Provide interactive KPI reporting for data-driven lending analysis.
+- Identify trends that can support lending and repayment decisions.
 
--   Monitor overall loan application and funding performance
--   Analyze **Good Loan vs Bad Loan** performance
--   Track funded amount and total amount received
--   Analyze average interest rate and average DTI
--   Understand loan performance by purpose, grade, state, and home
-    ownership
--   Identify trends in loan applications over time
--   Analyze loan status and repayment performance
--   Provide an interactive dashboard for business decision-making
+---
+
+## 🗂️ Project Structure
+
+```text
+Bank Loan Analytics Dashboard/
+│
+├── Dataset/
+│   ├── raw.xlsx
+│   └── cleaned.xlsx
+│
+├── IMAGES/
+│   └── Dashboard screenshots
+│
+├── Bank Loan Analytics Dashboard.pbix
+│
+└── README.md
+```
+
+### Dataset
+
+The `Dataset` folder contains:
+
+- **raw.xlsx** — Original source dataset used for the analysis.
+- **cleaned.xlsx** — Cleaned and prepared dataset used for analysis and dashboard development.
+
+### IMAGES
+
+Contains dashboard screenshots and visual assets used to document the project.
+
+### Power BI File
+
+`Bank Loan Analytics Dashboard.pbix` contains the Power BI data model, DAX measures, visuals, filters, and dashboard.
+
+---
+
+## 🧹 Data Preparation
+
+The project follows a structured data analytics workflow:
+
+**Raw Data → Data Cleaning & Preparation → Data Modeling → DAX & KPI Analysis → Interactive Dashboard**
+
+The cleaned dataset is used as the basis for analysis and visualization.
+
+---
+
+## 📈 Key KPIs
+
+| KPI | Description |
+|---|---|
+| Loan Applications | Total number of loan applications |
+| Funded Amount | Total amount funded through loans |
+| Amount Received | Total amount received from borrowers |
+| Interest Rate | Average interest rate across loans |
+| DTI Ratio | Debt-to-income analysis |
+| Good Loans | Loans classified as performing/good |
+| Bad Loans | Loans classified as bad |
+| Loan Status | Analysis of loan status and performance |
+
+---
+
+## 🔍 Key Analysis
+
+### Good vs Bad Loans
+
+The analysis segments the loan portfolio into:
+
+- **Good Loans:** 86.18%
+- **Bad Loans:** 13.82%
+
+This segmentation helps evaluate overall lending quality and portfolio risk.
+
+### Loan Purpose Analysis
+
+Loan performance can be analyzed dynamically across different loan purposes to identify variations in application volume and lending performance.
+
+### Loan Status Analysis
+
+Interactive filters allow users to explore loan performance by loan status and understand the distribution of lending activity.
+
+---
 
 ## 🛠️ Tools & Technologies
 
--   **Power BI** -- Data transformation, data modeling, DAX, and
-    dashboard development
--   **Power Query** -- Data cleaning and transformation
--   **DAX** -- Measures and calculated metrics
--   **Microsoft Excel** -- Source data
--   **PowerPoint / PDF** -- Project documentation and presentation
+- **Microsoft Power BI**
+- **DAX**
+- **SQL**
+- **Data Cleaning & Preparation**
+- **Data Modeling**
+- **KPI Analysis**
+- **Business Intelligence**
+- **Data Visualization**
 
-## 📁 Dataset
+---
 
-The project uses `Financial_loan_data.xlsx`.
+## 📊 Dashboard Features
 
-The dataset contains **38,576 loan records** and **23 columns**,
-including:
+- Interactive KPI cards
+- Loan performance analysis
+- Good vs Bad loan segmentation
+- Loan purpose analysis
+- Loan status analysis
+- Dynamic filters and slicers
+- Financial KPI tracking
+- Interactive Power BI visualizations
 
--   Issue Date
--   Loan ID
--   Loan Purpose
--   Verification Status
--   Grade and Sub-Grade
--   Home Ownership
--   State
--   Loan Status
--   Employment Length
--   Annual Income
--   DTI
--   Installment
--   Interest Rate
--   Loan Amount
--   Total Accounts
--   Total Payment
+---
 
-## 📌 Key KPIs
+## 💡 Business Value
 
-The dashboard focuses on important lending KPIs such as:
+This dashboard transforms raw loan data into an interactive analytical view that helps stakeholders:
 
--   **Total Loan Applications**
--   **Total Funded Amount**
--   **Total Amount Received**
--   **Average Interest Rate**
--   **Average DTI**
--   **Good Loan Applications**
--   **Bad Loan Applications**
--   **Good Loan Funded Amount**
--   **Bad Loan Funded Amount**
--   **Good Loan Received Amount**
--   **Bad Loan Received Amount**
+- Monitor lending performance.
+- Understand loan portfolio quality.
+- Compare good and bad loan segments.
+- Analyze borrower and loan characteristics.
+- Identify trends across loan purposes and statuses.
+- Support data-driven lending and risk analysis.
 
-## 📈 Dashboard Analysis
-
-### 1. Summary Analysis
-
-Provides an overall view of loan performance using key KPIs and
-loan-status analysis.
-
-### 2. Time Analysis
-
-Analyzes how loan applications and funding change over time based on the
-issue date.
-
-### 3. Loan Quality Analysis
-
-Compares **Good Loans** and **Bad Loans** to understand portfolio
-quality and repayment performance.
-
-### 4. Borrower & Loan Analysis
-
-Analyzes loan performance across:
-
--   Loan purpose
--   Loan grade and sub-grade
--   Home ownership
--   Employment length
--   Verification status
--   Address state
-
-### 5. Financial Analysis
-
-Examines:
-
--   Loan amount
--   Funded amount
--   Total payment received
--   Interest rate
--   DTI
--   Installment
-
-## 🔍 Important Business Insights
-
-The dashboard can be used to answer questions such as:
-
--   How many loans have been issued?
--   How much money has been funded?
--   How much has been received from borrowers?
--   What percentage of loans are good or bad?
--   Which loan purposes have the highest applications?
--   Which states have the highest loan activity?
--   How does interest rate vary across loan grades?
--   How does DTI vary across borrowers?
--   Which loan statuses contribute most to the portfolio?
--   How has loan performance changed over time?
-
-## 📂 Project Structure
-
-``` text
-Bank Loan Analytics Dashboard/
-│
-├── Bank Loan Analytics Dashboard.pbix
-├── Financial_loan_data.xlsx
-│
-└── IMAGES/
-    ├── APPLICATIONS.png
-    ├── AVG DTI.png
-    ├── AVG INT RATE.png
-    ├── BANK.png
-    ├── TOTAL AMOUNT RECEIVED.png
-    ├── TOTAL FUNDED AMOUNT.png
-    └── other dashboard images
-```
+---
 
 ## 🚀 How to Use
 
-1.  Download or clone this repository.
-2.  Open `Bank Loan Analytics Dashboard.pbix` using **Microsoft Power BI
-    Desktop**.
-3.  If required, update the Excel data-source path in Power BI.
-4.  Refresh the data.
-5.  Explore the interactive dashboard using filters and visualizations.
+### Option 1 — Interactive Dashboard
 
-## 💡 Skills Demonstrated
+View the live Power BI dashboard:
 
-This project demonstrates practical skills in:
+**[Open Live Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNWZiZjAwMjUtOWZkNC00Nzg1LWJjNjItNjFlNzJkNTQ0ODg4IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)**
 
--   Data cleaning
--   Data transformation
--   Data modeling
--   DAX calculations
--   KPI development
--   Interactive dashboard design
--   Business analysis
--   Data visualization
--   Financial / lending analytics
--   Power BI reporting
+### Option 2 — Power BI Desktop
 
-## 📷 Dashboard Preview
+1. Clone or download this repository.
+2. Open `Bank Loan Analytics Dashboard.pbix` using Power BI Desktop.
+3. Review the data model, DAX measures, filters, and visualizations.
+4. Use the files in the `Dataset/` folder to understand the raw-to-cleaned data workflow.
 
-Dashboard screenshots are available in the `IMAGES` folder.
+---
+
+## 📁 Repository Contents
+
+This repository contains:
+
+- Raw loan dataset
+- Cleaned loan dataset
+- Power BI dashboard
+- Dashboard images
+- Project documentation
+
+---
 
 ## 👤 Author
 
-**Shubham**
+**Shubham Malvankar**
 
-This project was created as part of a data analytics portfolio to
-demonstrate practical **Power BI, DAX, data visualization, and business
-analysis** skills.
+**Data Analytics | Power BI | SQL | Business Intelligence**
 
-------------------------------------------------------------------------
+---
 
-⭐ If you find this project useful, consider giving the repository a
-star!
+## ⭐ Project Highlights
+
+- **38K+ loan applications** analyzed.
+- **86.18% Good Loans** and **13.82% Bad Loans** identified.
+- Interactive Power BI dashboard with dynamic filtering.
+- Analysis of funding, repayments, interest rates, DTI, loan status, and loan purpose.
+- End-to-end workflow from **raw data to business insights**.
